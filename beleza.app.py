@@ -169,3 +169,46 @@ elif menu == "🌸 Curiosidades":
     
     st.success("💚 Cuide da natureza, como ela cuida de você!")
     st.caption("Projeto Beleza da Natureza | 2026")
+    # FORMULÁRIO
+# ===============================
+st.markdown("<div class='subtitulo'>📝 Formulário de Participação</div>", unsafe_allow_html=True)
+
+with st.form("formulario_participantes"):
+    nome = st.text_input("Nome completo:")
+    idade = st.number_input("Idade:", min_value=0, max_value=120)
+    turma = st.text_input("Turma / Série:")
+    email = st.text_input("E-mail:")
+    opiniao = st.selectbox(
+        "Você considera importante preservar a vida na água?",
+        ["Sim", "Não", "Talvez"]
+    )
+    comentario = st.text_area("Deixe sua opinião ou sugestão sobre o projeto:")
+
+    enviar = st.form_submit_button("Enviar")
+
+# ===============================
+# RESPOSTA AO ENVIO
+# ===============================
+if enviar:
+    st.success("✅ Informações enviadas com sucesso!")
+    st.write("*Resumo das informações:*")
+    st.write(f"👤 Nome: {nome}")
+    st.write(f"🎂 Idade: {idade}")
+    st.write(f"🏫 Turma: {turma}")
+    st.write(f"📧 E-mail: {email}")
+    st.write(f"🌊 Importância da preservação: {opiniao}")
+    st.write(f"💬 Comentário: {comentario}")
+    st.balloons()
+    db.collection("formulario").add(
+        {
+            "nome":nome,
+            "idade":idade,
+            "turma":turma,
+            "email":email,
+            "opniao":opiniao,
+            "comentario":comentario   
+        }
+    )
+    
+    import streamlit as st
+import time
