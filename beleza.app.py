@@ -104,10 +104,10 @@ elif menu == "🌊 Oceanos":
     ### 🐚 O que você precisa saber:
     
     -  Cobrem **71%** da superfície da Terra
-    - 💡 Produzem mais de **50% do oxigênio** que respiramos
-    - 🌡️ Regulam a temperatura global
-    - 🐠 Abrigam uma biodiversidade impressionante
-    - 🚢 São responsáveis por grande parte do clima do planeta
+    -  Produzem mais de **50% do oxigênio** que respiramos
+    -  Regulam a temperatura global
+    -  Abrigam uma biodiversidade impressionante
+    -  São responsáveis por grande parte do clima do planeta
     
     ### 🐢 Uma verdade fascinante:
     Apenas cerca de **5% dos oceanos** do mundo foram explorados. 
