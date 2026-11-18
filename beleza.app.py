@@ -103,7 +103,7 @@ elif menu == "🌊 Oceanos":
     st.markdown("""
     ### 🐚 O que você precisa saber:
     
-    - 🌙 Cobrem **71%** da superfície da Terra
+    -  Cobrem **71%** da superfície da Terra
     - 💡 Produzem mais de **50% do oxigênio** que respiramos
     - 🌡️ Regulam a temperatura global
     - 🐠 Abrigam uma biodiversidade impressionante
