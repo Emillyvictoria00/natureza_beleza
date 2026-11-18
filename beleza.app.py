@@ -4,7 +4,6 @@ import firebase_admin
 from firebase_admin import credentials,firestore
 
 if not firebase_admin._apps:
-    cred = credentials.Certificate("firebase.json")
     firebase_admin.initialize_app(cred)
 db= firestore.client()
 # ------------------- CONFIGURAÇÕES -------------------
@@ -95,7 +94,6 @@ elif menu == "🌳 Florestas":
     A **Floresta Amazônica** é a maior floresta tropical do mundo! 
     Abrange cerca de 5,5 milhões de km² e abriga milhões de espécies 
     que ainda nem foram descobertas. 🌎
-    """)
 
 elif menu == "🌊 Oceanos":
     st.title("🌊 Oceanos: O Coração Azul do Planeta")
